@@ -166,4 +166,4 @@ NEXT_PUBLIC_API_BASE_URL=http://localhost:3000
 6. Open a pull request.
 
 ## License
-This project is licensed under the Apache 2.0 License.
+This project is licensed under the Apache 2.0 License 
