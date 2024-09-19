@@ -1,1 +1,8 @@
-{"/_app":"pages/_app.js","/Register":"pages/Register.html","/affirmations":"pages/affirmations.html","/api/analysis/budget":"pages/api/analysis/budget.js","/_error":"pages/_error.js","/api/affirmations":"pages/api/affirmations.js","/api/auth/login":"pages/api/auth/login.js","/api/auth/register":"pages/api/auth/register.js","/budget-analysis":"pages/budget-analysis.html","/api/auth/jwtConfig":"pages/api/auth/jwtConfig.js","/":"pages/index.html","/login":"pages/login.html","/api/plans":"pages/api/plans.js","/plans":"pages/plans.html","/reminders":"pages/reminders.html","/unified-view":"pages/unified-view.html","/api/notifications/reminders":"pages/api/notifications/reminders.js","/_document":"pages/_document.js","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js",
+  "/login": "pages/login.js",
+  "/api/auth/login": "pages/api/auth/login.js"
+}
