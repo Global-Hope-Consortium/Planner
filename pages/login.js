@@ -32,7 +32,7 @@ const Login = () => {
 
       // Store JWT token
       localStorage.setItem('token', res.data.token);
-      setMessage('Login successful!');
+      setMessage(`Welcome back, ${username}!`);
 
       // Handle "Remember Me" functionality
       if (rememberMe) {
@@ -44,7 +44,7 @@ const Login = () => {
       }
 
       // Redirect to the plans page after successful login
-      router.push('/plans');
+      router.push('/plans'); // Redirect here after setting token
     } catch (error) {
       console.error('Login failed:', error.response?.data || error.message);
       setMessage(error.response?.data?.message || 'Login failed.');

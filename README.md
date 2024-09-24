@@ -36,74 +36,76 @@ financial-planner/
 ├── pages/
 │   ├── api/
 │   │   ├── auth/
-│   │   │   ├── login.js
-│   │   │   ├── register.js
+│   │   │   ├── login.js                    # User login logic
+│   │   │   ├── register.js                 # User registration logic
+│   │   │   ├── requestPasswordReset.js     # Request password reset logic (added)
+│   │   │   ├── resetPassword.js            # Password reset logic (added)
 │   │   ├── plans/
-│   │   │   ├── index.js
+│   │   │   ├── index.js                    # CRUD operations for plans
 │   │   ├── affirmations/
-│   │   │   ├── index.js
+│   │   │   ├── index.js                    # Affirmations management
 │   │   ├── analysis/
-│   │   │   ├── budget.js
+│   │   │   ├── budget.js                   # Budget analysis
 │   │   ├── notifications/
-│   │   │   ├── reminders.js
-│   ├── index.js
-│   ├── plans.js
+│   │   │   ├── reminders.js                # Reminders
+│   ├── index.js                            # Home page (updated for welcome message and login redirect)
+│   ├── plans.js                            # Plans page (with logout, added password reset)
 │   ├── affirmations.js
 │   ├── unified-view.js
 │   ├── budget-analysis.js
 │   ├── reminders.js
 ├── components/
-│   ├── Home.js
-│   ├── Plans.js
-│   ├── Affirmations.js
+│   ├── Home.js                             # Home component for landing page
+│   ├── Plans.js                            # Plans component
+│   ├── Affirmations.js                     # Affirmations component
 │   ├── UnifiedView.js
-│   ├── Navbar.js
-│   ├── FinancialChart.js
+│   ├── Navbar.js                           # Navbar component
+│   ├── FinancialChart.js                   # Chart component for financial visuals
 │   ├── BudgetAnalysis.js
 │   ├── ReminderSetup.js
 │   ├── MultiCurrencySupport.js
-│   ├── ExportData.js
+│   ├── ExportData.js                       # For exporting user data
 │   ├── UserForm.js
-│   ├── ErrorBoundary.js
+│   ├── ErrorBoundary.js                    # Error handling
 ├── public/
 │   ├── favicon.ico
 │   ├── images/
 │   ├── assets/
 ├── styles/
-│   ├── App.css
+│   ├── App.css                             # Main stylesheet
 │   ├── Responsive.css
 │   ├── Theme.css
 ├── middleware/
-│   ├── auth.js
-│   ├── errorHandler.js
-│   ├── csrfProtection.js
+│   ├── auth.js                             # Token verification middleware
+│   ├── errorHandler.js                     # Global error handler
+│   ├── csrfProtection.js                   # CSRF protection
 ├── config/
-│   ├── db.js
-│   ├── jwtConfig.js
-│   ├── environment.js
+│   ├── db.js                               # Database connection logic
+│   ├── jwtConfig.js                        # JWT configuration (added for token handling)
+│   ├── environment.js                      # Environment variables
 ├── tests/
 │   ├── api/
-│   │   ├── plans.test.js
+│   │   ├── plans.test.js                   # Tests for plans API
 │   │   ├── affirmations.test.js
-│   │   ├── auth.test.js
+│   │   ├── auth.test.js                    # Tests for auth API
 │   ├── components/
-│   │   ├── Plans.test.js
+│   │   ├── Plans.test.js                   # Tests for Plans component
 │   │   ├── Affirmations.test.js
 │   │   ├── UnifiedView.test.js
 ├── utils/
 │   ├── validators/
-│   │   ├── formValidator.js
+│   │   ├── formValidator.js                # Form validation utility
 │   ├── helpers/
-│   │   ├── dataExport.js
-│   │   ├── notificationHelper.js
+│   │   ├── dataExport.js                   # Helper for data export
+│   │   ├── notificationHelper.js           # Helper for notifications
 │   ├── visualizations/
-│   │   ├── chartConfig.js
-├── .env.local
-├── next.config.js
-├── jest.config.js
-├── package.json
-├── README.md
-```
+│   │   ├── chartConfig.js                  # Chart configuration
+│   ├── sendEmail.js                        # Utility for sending emails (added for password reset)
+├── .env.local                              # Environment variables (database URL, JWT secret)
+├── next.config.js                          # Next.js configuration
+├── jest.config.js                          # Jest configuration for testing
+├── package.json                            # Dependencies and scripts
+├── README.md                               # Project documentation
 
 ## Setup Instructions
 
