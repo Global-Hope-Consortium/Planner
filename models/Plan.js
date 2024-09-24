@@ -3,20 +3,21 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
 
 const Plan = sequelize.define('Plan', {
-  userId: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
-  title: {
+  name: {
     type: DataTypes.STRING,
-    allowNull: false,
-  },
-  amount: {
-    type: DataTypes.DECIMAL,
     allowNull: false,
   },
   description: {
     type: DataTypes.TEXT,
+    allowNull: true,
+  },
+  amount: {
+    type: DataTypes.FLOAT,
+    allowNull: false,
+  },
+  duration: {
+    type: DataTypes.INTEGER, // in months
+    allowNull: false,
   },
 });
 

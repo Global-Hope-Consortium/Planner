@@ -1,26 +1,27 @@
-// pages/api/plans/index.js
-import nc from 'next-connect';
-import Plan from '../../../models/Plan';
 import { connectDB } from '../../../config/db';
 import { verifyToken } from '../../../middleware/auth';
 
-const handler = nc();
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
+    try {
+      // Verify token
+      const token = req.headers.authorization?.split(' ')[1];
+      if (!token) {
+        return res.status(401).json({ message: 'Unauthorized' });
+      }
+      const decoded = verifyToken(token);
 
-handler.use(verifyToken).post(async (req, res) => {
-  await connectDB();
-  const { title, amount, description } = req.body;
-  const userId = req.user.id;
+      // Connect to the database
+      await connectDB();
 
-  const plan = await Plan.create({ userId, title, amount, description });
-  res.status(201).json(plan);
-});
-
-handler.use(verifyToken).get(async (req, res) => {
-  await connectDB();
-  const userId = req.user.id;
-
-  const plans = await Plan.findAll({ where: { userId } });
-  res.status(200).json(plans);
-});
-
-export default handler;
+      // Process request...
+      return res.status(200).json({ message: 'Success' });
+    } catch (error) {
+      console.error('API error:', error);
+      return res.status(500).json({ message: 'Internal server error' });
+    }
+  } else {
+    res.setHeader('Allow', ['POST']);
+    return res.status(405).end(`Method ${req.method} Not Allowed`);
+  }
+}

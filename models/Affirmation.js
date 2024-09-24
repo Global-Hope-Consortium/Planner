@@ -3,13 +3,14 @@ const { DataTypes } = require('sequelize');
 const { sequelize } = require('../config/db');
 
 const Affirmation = sequelize.define('Affirmation', {
-  userId: {
-    type: DataTypes.INTEGER,
-    allowNull: false,
-  },
-  content: {
+  text: {
     type: DataTypes.TEXT,
     allowNull: false,
+  },
+  date: {
+    type: DataTypes.DATE,
+    allowNull: false,
+    defaultValue: DataTypes.NOW,
   },
 });
 
