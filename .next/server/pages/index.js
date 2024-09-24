@@ -29,7 +29,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ \"./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);\n// pages/index.js\n\n\n\nconst Home = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Welcome to Financial Planner\"\n            }, void 0, false, {\n                fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                lineNumber: 8,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                href: \"/login\",\n                children: \"Login\"\n            }, void 0, false, {\n                fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                lineNumber: 9,\n                columnNumber: 7\n            }, undefined),\n            \" | \",\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                href: \"/register\",\n                children: \"Register\"\n            }, void 0, false, {\n                fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                lineNumber: 9,\n                columnNumber: 42\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n        lineNumber: 7,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQUEsaUJBQWlCOztBQUNTO0FBQ0c7QUFFN0IsTUFBTUUsT0FBTztJQUNYLHFCQUNFLDhEQUFDQzs7MEJBQ0MsOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNILGtEQUFJQTtnQkFBQ0ksTUFBSzswQkFBUzs7Ozs7O1lBQVk7MEJBQUcsOERBQUNKLGtEQUFJQTtnQkFBQ0ksTUFBSzswQkFBWTs7Ozs7Ozs7Ozs7O0FBR2hFO0FBRUEsaUVBQWVILElBQUlBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wbGFubmVyLy4vcGFnZXMvaW5kZXguanM/YmVlNyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBwYWdlcy9pbmRleC5qc1xuaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5cbmNvbnN0IEhvbWUgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIDxoMT5XZWxjb21lIHRvIEZpbmFuY2lhbCBQbGFubmVyPC9oMT5cbiAgICAgIDxMaW5rIGhyZWY9XCIvbG9naW5cIj5Mb2dpbjwvTGluaz4gfCA8TGluayBocmVmPVwiL3JlZ2lzdGVyXCI+UmVnaXN0ZXI8L0xpbms+XG4gICAgPC9kaXY+XG4gICk7XG59O1xuXG5leHBvcnQgZGVmYXVsdCBIb21lOyJdLCJuYW1lcyI6WyJSZWFjdCIsIkxpbmsiLCJIb21lIiwiZGl2IiwiaDEiLCJocmVmIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ \"./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/router */ \"./node_modules/next/router.js\");\n/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var jsonwebtoken__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! jsonwebtoken */ \"jsonwebtoken\");\n/* harmony import */ var jsonwebtoken__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(jsonwebtoken__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\nconst Home = ()=>{\n    const [isLoggedIn, setIsLoggedIn] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);\n    const [username, setUsername] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(\"\");\n    const router = (0,next_router__WEBPACK_IMPORTED_MODULE_3__.useRouter)();\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const token = localStorage.getItem(\"token\");\n        if (token) {\n            try {\n                // Decode the JWT to get the username\n                const decoded = jsonwebtoken__WEBPACK_IMPORTED_MODULE_4___default().decode(token);\n                if (decoded && decoded.username) {\n                    setUsername(decoded.username);\n                    setIsLoggedIn(true);\n                }\n            } catch (error) {\n                console.error(\"Error decoding token:\", error);\n                localStorage.removeItem(\"token\"); // Remove invalid token\n            }\n        }\n    }, []);\n    const handleLogout = ()=>{\n        localStorage.removeItem(\"token\"); // Remove token from localStorage\n        setIsLoggedIn(false); // Reset login state\n        router.push(\"/login\"); // Redirect to login page\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: isLoggedIn ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: [\n                        \"Welcome back, \",\n                        username,\n                        \"!\"\n                    ]\n                }, void 0, true, {\n                    fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                    lineNumber: 38,\n                    columnNumber: 11\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                    onClick: handleLogout,\n                    children: \"Logout\"\n                }, void 0, false, {\n                    fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                    lineNumber: 39,\n                    columnNumber: 11\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n            lineNumber: 37,\n            columnNumber: 9\n        }, undefined) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    children: \"Welcome to Financial Planner\"\n                }, void 0, false, {\n                    fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                    lineNumber: 43,\n                    columnNumber: 11\n                }, undefined),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                    href: \"/login\",\n                    children: \"Login\"\n                }, void 0, false, {\n                    fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                    lineNumber: 44,\n                    columnNumber: 11\n                }, undefined),\n                \" | \",\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_2___default()), {\n                    href: \"/register\",\n                    children: \"Register\"\n                }, void 0, false, {\n                    fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n                    lineNumber: 44,\n                    columnNumber: 46\n                }, undefined)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n            lineNumber: 42,\n            columnNumber: 9\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/sthwalonyoni/Planner/Planner/pages/index.js\",\n        lineNumber: 35,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9pbmRleC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7QUFBbUQ7QUFDdEI7QUFDVztBQUNUO0FBRS9CLE1BQU1NLE9BQU87SUFDWCxNQUFNLENBQUNDLFlBQVlDLGNBQWMsR0FBR1AsK0NBQVFBLENBQUM7SUFDN0MsTUFBTSxDQUFDUSxVQUFVQyxZQUFZLEdBQUdULCtDQUFRQSxDQUFDO0lBQ3pDLE1BQU1VLFNBQVNQLHNEQUFTQTtJQUV4QkYsZ0RBQVNBLENBQUM7UUFDUixNQUFNVSxRQUFRQyxhQUFhQyxPQUFPLENBQUM7UUFDbkMsSUFBSUYsT0FBTztZQUNULElBQUk7Z0JBQ0YscUNBQXFDO2dCQUNyQyxNQUFNRyxVQUFVViwwREFBVSxDQUFDTztnQkFDM0IsSUFBSUcsV0FBV0EsUUFBUU4sUUFBUSxFQUFFO29CQUMvQkMsWUFBWUssUUFBUU4sUUFBUTtvQkFDNUJELGNBQWM7Z0JBQ2hCO1lBQ0YsRUFBRSxPQUFPUyxPQUFPO2dCQUNkQyxRQUFRRCxLQUFLLENBQUMseUJBQXlCQTtnQkFDdkNKLGFBQWFNLFVBQVUsQ0FBQyxVQUFVLHVCQUF1QjtZQUMzRDtRQUNGO0lBQ0YsR0FBRyxFQUFFO0lBRUwsTUFBTUMsZUFBZTtRQUNuQlAsYUFBYU0sVUFBVSxDQUFDLFVBQVUsaUNBQWlDO1FBQ25FWCxjQUFjLFFBQVEsb0JBQW9CO1FBQzFDRyxPQUFPVSxJQUFJLENBQUMsV0FBVyx5QkFBeUI7SUFDbEQ7SUFFQSxxQkFDRSw4REFBQ0M7a0JBQ0VmLDJCQUNDLDhEQUFDZTs7OEJBQ0MsOERBQUNDOzt3QkFBRzt3QkFBZWQ7d0JBQVM7Ozs7Ozs7OEJBQzVCLDhEQUFDZTtvQkFBT0MsU0FBU0w7OEJBQWM7Ozs7Ozs7Ozs7O3NDQUdqQyw4REFBQ0U7OzhCQUNDLDhEQUFDQzs4QkFBRzs7Ozs7OzhCQUNKLDhEQUFDcEIsa0RBQUlBO29CQUFDdUIsTUFBSzs4QkFBUzs7Ozs7O2dCQUFZOzhCQUFHLDhEQUFDdkIsa0RBQUlBO29CQUFDdUIsTUFBSzs4QkFBWTs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFLcEU7QUFFQSxpRUFBZXBCLElBQUlBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9wbGFubmVyLy4vcGFnZXMvaW5kZXguanM/YmVlNyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QsIHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluayc7XG5pbXBvcnQgeyB1c2VSb3V0ZXIgfSBmcm9tICduZXh0L3JvdXRlcic7XG5pbXBvcnQgand0IGZyb20gJ2pzb253ZWJ0b2tlbic7XG5cbmNvbnN0IEhvbWUgPSAoKSA9PiB7XG4gIGNvbnN0IFtpc0xvZ2dlZEluLCBzZXRJc0xvZ2dlZEluXSA9IHVzZVN0YXRlKGZhbHNlKTtcbiAgY29uc3QgW3VzZXJuYW1lLCBzZXRVc2VybmFtZV0gPSB1c2VTdGF0ZSgnJyk7XG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xuXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgY29uc3QgdG9rZW4gPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgndG9rZW4nKTtcbiAgICBpZiAodG9rZW4pIHtcbiAgICAgIHRyeSB7XG4gICAgICAgIC8vIERlY29kZSB0aGUgSldUIHRvIGdldCB0aGUgdXNlcm5hbWVcbiAgICAgICAgY29uc3QgZGVjb2RlZCA9IGp3dC5kZWNvZGUodG9rZW4pO1xuICAgICAgICBpZiAoZGVjb2RlZCAmJiBkZWNvZGVkLnVzZXJuYW1lKSB7XG4gICAgICAgICAgc2V0VXNlcm5hbWUoZGVjb2RlZC51c2VybmFtZSk7XG4gICAgICAgICAgc2V0SXNMb2dnZWRJbih0cnVlKTtcbiAgICAgICAgfVxuICAgICAgfSBjYXRjaCAoZXJyb3IpIHtcbiAgICAgICAgY29uc29sZS5lcnJvcignRXJyb3IgZGVjb2RpbmcgdG9rZW46JywgZXJyb3IpO1xuICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsgLy8gUmVtb3ZlIGludmFsaWQgdG9rZW5cbiAgICAgIH1cbiAgICB9XG4gIH0sIFtdKTtcblxuICBjb25zdCBoYW5kbGVMb2dvdXQgPSAoKSA9PiB7XG4gICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ3Rva2VuJyk7IC8vIFJlbW92ZSB0b2tlbiBmcm9tIGxvY2FsU3RvcmFnZVxuICAgIHNldElzTG9nZ2VkSW4oZmFsc2UpOyAvLyBSZXNldCBsb2dpbiBzdGF0ZVxuICAgIHJvdXRlci5wdXNoKCcvbG9naW4nKTsgLy8gUmVkaXJlY3QgdG8gbG9naW4gcGFnZVxuICB9O1xuXG4gIHJldHVybiAoXG4gICAgPGRpdj5cbiAgICAgIHtpc0xvZ2dlZEluID8gKFxuICAgICAgICA8ZGl2PlxuICAgICAgICAgIDxoMT5XZWxjb21lIGJhY2ssIHt1c2VybmFtZX0hPC9oMT5cbiAgICAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2hhbmRsZUxvZ291dH0+TG9nb3V0PC9idXR0b24+XG4gICAgICAgIDwvZGl2PlxuICAgICAgKSA6IChcbiAgICAgICAgPGRpdj5cbiAgICAgICAgICA8aDE+V2VsY29tZSB0byBGaW5hbmNpYWwgUGxhbm5lcjwvaDE+XG4gICAgICAgICAgPExpbmsgaHJlZj1cIi9sb2dpblwiPkxvZ2luPC9MaW5rPiB8IDxMaW5rIGhyZWY9XCIvcmVnaXN0ZXJcIj5SZWdpc3RlcjwvTGluaz5cbiAgICAgICAgPC9kaXY+XG4gICAgICApfVxuICAgIDwvZGl2PlxuICApO1xufTtcblxuZXhwb3J0IGRlZmF1bHQgSG9tZTsiXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VTdGF0ZSIsInVzZUVmZmVjdCIsIkxpbmsiLCJ1c2VSb3V0ZXIiLCJqd3QiLCJIb21lIiwiaXNMb2dnZWRJbiIsInNldElzTG9nZ2VkSW4iLCJ1c2VybmFtZSIsInNldFVzZXJuYW1lIiwicm91dGVyIiwidG9rZW4iLCJsb2NhbFN0b3JhZ2UiLCJnZXRJdGVtIiwiZGVjb2RlZCIsImRlY29kZSIsImVycm9yIiwiY29uc29sZSIsInJlbW92ZUl0ZW0iLCJoYW5kbGVMb2dvdXQiLCJwdXNoIiwiZGl2IiwiaDEiLCJidXR0b24iLCJvbkNsaWNrIiwiaHJlZiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/index.js\n");
+
+/***/ }),
+
+/***/ "jsonwebtoken":
+/*!*******************************!*\
+  !*** external "jsonwebtoken" ***!
+  \*******************************/
+/***/ ((module) => {
+
+module.exports = require("jsonwebtoken");
 
 /***/ }),
 
@@ -53,6 +63,16 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ "react-dom":
+/*!****************************!*\
+  !*** external "react-dom" ***!
+  \****************************/
+/***/ ((module) => {
+
+module.exports = require("react-dom");
+
+/***/ }),
+
 /***/ "react/jsx-dev-runtime":
 /*!****************************************!*\
   !*** external "react/jsx-dev-runtime" ***!
@@ -73,6 +93,16 @@ module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+module.exports = require("fs");
+
+/***/ }),
+
 /***/ "path":
 /*!***********************!*\
   !*** external "path" ***!
@@ -80,6 +110,26 @@ module.exports = require("react/jsx-runtime");
 /***/ ((module) => {
 
 module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+module.exports = require("zlib");
 
 /***/ })
 

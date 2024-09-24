@@ -2,9 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/auth/login": "pages/api/auth/login.js",
-  "/login": "pages/login.js",
-  "/plans": "pages/plans.js",
   "/": "pages/index.js",
+  "/login": "pages/login.js",
+  "/api/auth/login": "pages/api/auth/login.js",
+  "/register": "pages/register.js",
+  "/plans": "pages/plans.js",
   "/api/plans": "pages/api/plans.js"
 }

@@ -103,6 +103,9 @@ const Plans = () => {
       setPlans(res.data);
     } catch (error) {
       console.error('Error fetching plans:', error);
+      if (error.response?.status === 401) {
+        router.push('/login'); // Redirect to login if unauthorized
+      }
     }
   };
 

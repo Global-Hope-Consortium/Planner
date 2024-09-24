@@ -8,24 +8,17 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [rememberMe, setRememberMe] = useState(false);
   const [message, setMessage] = useState('');
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // New state to track if user is logged in
   const router = useRouter();
 
   // Load saved username and password from localStorage if "Remember Me" was checked
   useEffect(() => {
     const savedUsername = localStorage.getItem('rememberMeUsername');
     const savedPassword = localStorage.getItem('rememberMePassword');
-    const token = localStorage.getItem('token');
 
     if (savedUsername && savedPassword) {
       setUsername(savedUsername);
       setPassword(savedPassword);
       setRememberMe(true);
-    }
-
-    // Check if user is already logged in (i.e., has a valid token)
-    if (token) {
-      setIsLoggedIn(true); // User is already logged in
     }
   }, []);
 
@@ -40,7 +33,6 @@ const Login = () => {
       // Store JWT token
       localStorage.setItem('token', res.data.token);
       setMessage('Login successful!');
-      setIsLoggedIn(true); // Set the user as logged in
 
       // Handle "Remember Me" functionality
       if (rememberMe) {
@@ -51,71 +43,52 @@ const Login = () => {
         localStorage.removeItem('rememberMePassword');
       }
 
-      router.push('/plans'); // Redirect to plans page after login
+      // Redirect to the plans page after successful login
+      router.push('/plans');
     } catch (error) {
       console.error('Login failed:', error.response?.data || error.message);
       setMessage(error.response?.data?.message || 'Login failed.');
     }
   };
 
-  // Logout function
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    localStorage.removeItem('rememberMeUsername');
-    localStorage.removeItem('rememberMePassword');
-    setIsLoggedIn(false); // Set the user as logged out
-    setMessage('Logged out successfully.');
-    router.push('/login'); // Redirect to login page
-  };
-
   return (
     <div>
-      {!isLoggedIn ? (
-        <>
-          <h1>Login</h1>
-          <form onSubmit={handleLogin}>
-            <input
-              type="text"
-              placeholder="Username"
-              value={username}
-              onChange={(e) => setUsername(e.target.value)}
-            />
-            <div>
-              <input
-                type={showPassword ? 'text' : 'password'}
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-              <label>
-                <input
-                  type="checkbox"
-                  checked={showPassword}
-                  onChange={() => setShowPassword(!showPassword)}
-                />
-                Show Password
-              </label>
-            </div>
-            <div>
-              <label>
-                <input
-                  type="checkbox"
-                  checked={rememberMe}
-                  onChange={() => setRememberMe(!rememberMe)}
-                />
-                Remember Me
-              </label>
-            </div>
-            <button type="submit">Login</button>
-          </form>
-        </>
-      ) : (
+      <h1>Login</h1>
+      <form onSubmit={handleLogin}>
+        <input
+          type="text"
+          placeholder="Username"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
         <div>
-          <h1>Welcome, {username}</h1>
-          <p>You are logged in!</p>
-          <button onClick={handleLogout}>Logout</button>
+          <input
+            type={showPassword ? 'text' : 'password'}
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <label>
+            <input
+              type="checkbox"
+              checked={showPassword}
+              onChange={() => setShowPassword(!showPassword)}
+            />
+            Show Password
+          </label>
         </div>
-      )}
+        <div>
+          <label>
+            <input
+              type="checkbox"
+              checked={rememberMe}
+              onChange={() => setRememberMe(!rememberMe)}
+            />
+            Remember Me
+          </label>
+        </div>
+        <button type="submit">Login</button>
+      </form>
       {message && <p>{message}</p>}
     </div>
   );
