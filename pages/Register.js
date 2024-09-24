@@ -1,4 +1,3 @@
-// pages/register.js
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -22,12 +21,16 @@ const Register = () => {
       <h1>Register</h1>
       <form onSubmit={handleRegister}>
         <input
+          id="username"
+          name="username"
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
+          id="password"
+          name="password"
           type="password"
           placeholder="Password"
           value={password}

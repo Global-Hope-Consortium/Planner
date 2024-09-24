@@ -1,4 +1,3 @@
-// pages/login.js
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useRouter } from 'next/router';
@@ -12,11 +11,16 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
+      console.log('Sending login request:', { username, password });
+
       const res = await axios.post('/api/auth/login', { username, password });
+      console.log('Login response:', res.data); 
+
       localStorage.setItem('token', res.data.token); // Store JWT token
       setMessage('Login successful!');
       router.push('/plans'); // Redirect to plans page
     } catch (error) {
+      console.error('Login failed:', error.response?.data || error.message);
       setMessage(error.response?.data?.message || 'Login failed.');
     }
   };
