@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useRouter } from 'next/router';
 
 const Login = () => {
+  // State variables for form data, showing the password, and remember me feature
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -10,41 +11,56 @@ const Login = () => {
   const [message, setMessage] = useState('');
   const router = useRouter();
 
-  // Load saved username and password from localStorage if "Remember Me" was checked
+  // Check if user is already logged in by looking for a JWT token in localStorage
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      // If a token is found, assume the user is logged in and redirect to the /plans page
+      router.push('/plans');
+    }
+  }, [router]); // The router dependency ensures redirection occurs when the router is available
+
+  // Load saved username and password from localStorage if the "Remember Me" option was previously selected
   useEffect(() => {
     const savedUsername = localStorage.getItem('rememberMeUsername');
     const savedPassword = localStorage.getItem('rememberMePassword');
-
+    
+    // If the username and password were saved, update the state to fill the form
     if (savedUsername && savedPassword) {
       setUsername(savedUsername);
       setPassword(savedPassword);
-      setRememberMe(true);
+      setRememberMe(true); // Set "Remember Me" checkbox to checked
     }
   }, []);
 
+  // Handle form submission (login)
   const handleLogin = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the form from reloading the page on submit
+
     try {
       console.log('Sending login request:', { username, password });
 
+      // Send login request to the server
       const res = await axios.post('/api/auth/login', { username, password });
       console.log('Login response:', res.data);
 
-      // Store JWT token
+      // Store the received JWT token in localStorage
       localStorage.setItem('token', res.data.token);
       setMessage(`Welcome back, ${username}!`);
 
-      // Handle "Remember Me" functionality
+      // Handle the "Remember Me" functionality
       if (rememberMe) {
+        // If "Remember Me" is checked, save the username and password in localStorage
         localStorage.setItem('rememberMeUsername', username);
         localStorage.setItem('rememberMePassword', password);
       } else {
+        // Otherwise, remove the saved credentials
         localStorage.removeItem('rememberMeUsername');
         localStorage.removeItem('rememberMePassword');
       }
 
-      // Redirect to the plans page after successful login
-      router.push('/plans'); // Redirect here after setting token
+      // Redirect to the /plans page after a successful login
+      router.push('/plans');
     } catch (error) {
       console.error('Login failed:', error.response?.data || error.message);
       setMessage(error.response?.data?.message || 'Login failed.');

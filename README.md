@@ -30,82 +30,82 @@ This Financial Planner Web App is a comprehensive tool designed for multi-servic
 ```
 financial-planner/
 ├── models/
-│   ├── Affirmation.js
-│   ├── Plan.js
-│   ├── User.js
+│   ├── Affirmation.js                    # Affirmation model (database structure for affirmations)
+│   ├── Plan.js                           # Plan model (database structure for financial plans)
+│   ├── User.js                           # User model (database structure for users)
 ├── pages/
 │   ├── api/
 │   │   ├── auth/
-│   │   │   ├── login.js                    # User login logic
-│   │   │   ├── register.js                 # User registration logic
-│   │   │   ├── requestPasswordReset.js     # Request password reset logic (added)
-│   │   │   ├── resetPassword.js            # Password reset logic (added)
+│   │   │   ├── login.js                  # User login logic
+│   │   │   ├── register.js               # User registration logic
+│   │   │   ├── requestPasswordReset.js   # Request password reset logic
+│   │   │   ├── resetPassword.js          # Password reset logic
 │   │   ├── plans/
-│   │   │   ├── index.js                    # CRUD operations for plans
+│   │   │   ├── index.js                  # CRUD operations for plans
 │   │   ├── affirmations/
-│   │   │   ├── index.js                    # Affirmations management
+│   │   │   ├── index.js                  # Affirmations API endpoint
 │   │   ├── analysis/
-│   │   │   ├── budget.js                   # Budget analysis
+│   │   │   ├── budget.js                 # Budget analysis API endpoint
 │   │   ├── notifications/
-│   │   │   ├── reminders.js                # Reminders
-│   ├── index.js                            # Home page (updated for welcome message and login redirect)
-│   ├── plans.js                            # Plans page (with logout, added password reset)
-│   ├── affirmations.js
-│   ├── unified-view.js
-│   ├── budget-analysis.js
-│   ├── reminders.js
+│   │   │   ├── reminders.js              # Reminders API endpoint
+│   ├── index.js                          # Home page (displays welcome and login)
+│   ├── plans.js                          # Plans page (displays user plans, adds logout and password reset)
+│   ├── affirmations.js                   # Display user affirmations
+│   ├── unified-view.js                   # Unified view component
+│   ├── budget-analysis.js                # Budget analysis page
+│   ├── reminders.js                      # Reminders page
 ├── components/
-│   ├── Home.js                             # Home component for landing page
-│   ├── Plans.js                            # Plans component
-│   ├── Affirmations.js                     # Affirmations component
-│   ├── UnifiedView.js
-│   ├── Navbar.js                           # Navbar component
-│   ├── FinancialChart.js                   # Chart component for financial visuals
-│   ├── BudgetAnalysis.js
-│   ├── ReminderSetup.js
-│   ├── MultiCurrencySupport.js
-│   ├── ExportData.js                       # For exporting user data
-│   ├── UserForm.js
-│   ├── ErrorBoundary.js                    # Error handling
+│   ├── Home.js                           # Home component (landing page structure)
+│   ├── Plans.js                          # Plans component (displays and handles plans)
+│   ├── Affirmations.js                   # Affirmations component (displays affirmations)
+│   ├── UnifiedView.js                    # Unified view component for dashboard
+│   ├── Navbar.js                         # Navbar component (navigation)
+│   ├── FinancialChart.js                 # Component to display financial charts
+│   ├── BudgetAnalysis.js                 # Budget analysis component
+│   ├── ReminderSetup.js                  # Setup reminders component
+│   ├── MultiCurrencySupport.js           # Component to handle multi-currency financial plans
+│   ├── ExportData.js                     # Component to export user data
+│   ├── UserForm.js                       # Form component for user input
+│   ├── ErrorBoundary.js                  # Global error handler component
 ├── public/
-│   ├── favicon.ico
-│   ├── images/
-│   ├── assets/
+│   ├── favicon.ico                       # Favicon
+│   ├── images/                           # Publicly accessible images
+│   ├── assets/                           # Publicly accessible assets
 ├── styles/
-│   ├── App.css                             # Main stylesheet
-│   ├── Responsive.css
-│   ├── Theme.css
+│   ├── App.css                           # Global CSS file for the application
+│   ├── Responsive.css                    # CSS file for responsive design
+│   ├── Theme.css                         # CSS file for theme-specific styles
 ├── middleware/
-│   ├── auth.js                             # Token verification middleware
-│   ├── errorHandler.js                     # Global error handler
-│   ├── csrfProtection.js                   # CSRF protection
+│   ├── auth.js                           # JWT token verification middleware
+│   ├── errorHandler.js                   # Error handling middleware
+│   ├── csrfProtection.js                 # Middleware to handle CSRF protection
 ├── config/
-│   ├── db.js                               # Database connection logic
-│   ├── jwtConfig.js                        # JWT configuration (added for token handling)
-│   ├── environment.js                      # Environment variables
+│   ├── db.js                             # Database connection logic (Sequelize instance)
+│   ├── jwtConfig.js                      # JWT configuration (secret, token expiration)
+│   ├── environment.js                    # Configuration for environment variables
 ├── tests/
 │   ├── api/
-│   │   ├── plans.test.js                   # Tests for plans API
-│   │   ├── affirmations.test.js
-│   │   ├── auth.test.js                    # Tests for auth API
+│   │   ├── plans.test.js                 # Tests for plans API
+│   │   ├── affirmations.test.js          # Tests for affirmations API
+│   │   ├── auth.test.js                  # Tests for authentication API
 │   ├── components/
-│   │   ├── Plans.test.js                   # Tests for Plans component
-│   │   ├── Affirmations.test.js
-│   │   ├── UnifiedView.test.js
+│   │   ├── Plans.test.js                 # Tests for the Plans component
+│   │   ├── Affirmations.test.js          # Tests for the Affirmations component
+│   │   ├── UnifiedView.test.js           # Tests for Unified View component
 ├── utils/
 │   ├── validators/
-│   │   ├── formValidator.js                # Form validation utility
+│   │   ├── formValidator.js              # Utility for form validation
 │   ├── helpers/
-│   │   ├── dataExport.js                   # Helper for data export
-│   │   ├── notificationHelper.js           # Helper for notifications
+│   │   ├── dataExport.js                 # Helper for exporting user data
+│   │   ├── notificationHelper.js         # Helper for notifications
 │   ├── visualizations/
-│   │   ├── chartConfig.js                  # Chart configuration
-│   ├── sendEmail.js                        # Utility for sending emails (added for password reset)
-├── .env.local                              # Environment variables (database URL, JWT secret)
-├── next.config.js                          # Next.js configuration
-├── jest.config.js                          # Jest configuration for testing
-├── package.json                            # Dependencies and scripts
-├── README.md                               # Project documentation
+│   │   ├── chartConfig.js                # Helper for chart configuration and rendering
+│   ├── sendEmail.js                      # Utility for sending emails (password reset)
+├── .env.local                            # Environment variables (e.g., DATABASE_URL, JWT_SECRET)
+├── next.config.js                        # Next.js configuration file (React strict mode, env vars)
+├── jest.config.js                        # Configuration for Jest (testing framework)
+├── package.json                          # Project dependencies and scripts (npm)
+├── README.md                             # Documentation for the project
 
 ## Setup Instructions
 

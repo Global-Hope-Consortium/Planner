@@ -1,33 +1,8 @@
-/* // syncDatabase.js
-const { connectDB, syncModels } = require('./config/db');
-
-const syncDatabase = async () => {
-  try {
-    console.log('Starting database synchronization...');
-    
-    await connectDB();  // Ensure the database is connected
-    console.log('Database connected.');
-
-    // Add logging for model definition
-    const User = require('./models/User');
-    const Plan = require('./models/Plan');
-    const Affirmation = require('./models/Affirmation');
-
-    console.log('User model:', User);
-    console.log('Plan model:', Plan);
-    console.log('Affirmation model:', Affirmation);
-
-    await syncModels(); // Synchronize the models with the database
-    console.log('All models were synchronized successfully.');
-  } catch (error) {
-    console.error('Database synchronization failed:', error);
-  }
-};
-
-syncDatabase(); */
-
 // syncDatabase.js
-const { sequelize, connectDB, syncModels } = require('./config/db');
+import { sequelize, connectDB, syncModels } from './config/db';
+import User from './models/User';
+import Plan from './models/Plan';
+import Affirmation from './models/Affirmation';
 
 const syncDatabase = async () => {
   try {
@@ -36,11 +11,6 @@ const syncDatabase = async () => {
     // Ensure the database is connected
     await connectDB();
     console.log('Database connected.');
-
-    // Import the models
-    const User = require('./models/User');
-    const Plan = require('./models/Plan');
-    const Affirmation = require('./models/Affirmation');
 
     // Log the models for debugging purposes
     console.log('User model:', User);
@@ -66,4 +36,8 @@ const syncDatabase = async () => {
   }
 };
 
-syncDatabase()
+// Export the syncDatabase function for external use if needed
+export default syncDatabase;
+
+// Call the syncDatabase function to execute the synchronization
+syncDatabase();

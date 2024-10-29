@@ -1,24 +1,23 @@
 // models/Plan.js
-const { DataTypes } = require('sequelize');
-const { sequelize } = require('../config/db');
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/db';  // Ensure sequelize is imported correctly
 
+// Define the Plan model
 const Plan = sequelize.define('Plan', {
-  name: {
+  title: {
     type: DataTypes.STRING,
-    allowNull: false,
-  },
-  description: {
-    type: DataTypes.TEXT,
-    allowNull: true,
+    allowNull: false
   },
   amount: {
     type: DataTypes.FLOAT,
-    allowNull: false,
+    allowNull: false
   },
-  duration: {
-    type: DataTypes.INTEGER, // in months
-    allowNull: false,
-  },
+  description: {
+    type: DataTypes.STRING,
+    allowNull: true
+  }
+}, {
+  timestamps: true  // Automatically add createdAt and updatedAt fields
 });
 
-module.exports = Plan;
+export default Plan;
